@@ -96,7 +96,7 @@ function opl_landing_default_page_manager_handlers() {
     'delta_reversed' => FALSE,
     'formatter_settings' => array(
       'title_style' => 'h2',
-      'title_link' => 'content',
+      'title_link' => '',
       'title_class' => '',
     ),
     'context' => 'argument_entity_panels_entity_id:node_1',
