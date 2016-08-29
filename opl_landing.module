@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the OPL_landing feature.
+ */
+
+include_once 'opl_landing.features.inc';
