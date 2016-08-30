@@ -715,6 +715,32 @@ And because our customers are as diverse as our collections, we have a variety o
   $handler->display->display_options['filters']['field_destination_page_value']['value'] = array(
     15 => '15',
   );
+
+  /* Display: Booking landing page - Embed */
+  $handler = $view->new_display('embed', 'Booking landing page - Embed', 'embed_8');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'landing_page' => 'landing_page',
+  );
+  /* Filter criterion: Content: Destination page (field_destination_page) */
+  $handler->display->display_options['filters']['field_destination_page_value']['id'] = 'field_destination_page_value';
+  $handler->display->display_options['filters']['field_destination_page_value']['table'] = 'field_data_field_destination_page';
+  $handler->display->display_options['filters']['field_destination_page_value']['field'] = 'field_destination_page_value';
+  $handler->display->display_options['filters']['field_destination_page_value']['value'] = array(
+    16 => '16',
+  );
   $translatables['about_landing_page'] = array(
     t('Master'),
     t('About OPL'),
@@ -779,6 +805,7 @@ And because our customers are as diverse as our collections, we have a variety o
 11:00 a.m. to 3:00 p.m. / 11 h à 15 h
 <em>Beaverbrook, Main and St-Laurent / Succursales Beaverbrook, Centrale et St-Laurent</em> </p>
 </div>'),
+    t('Booking landing page - Embed'),
   );
   $export['about_landing_page'] = $view;
 
@@ -816,35 +843,42 @@ And because our customers are as diverse as our collections, we have a variety o
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
+  $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['label'] = '';
+  $handler->display->display_options['fields']['field_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_link']['click_sort_column'] = 'url';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['label'] = '';
-  $handler->display->display_options['fields']['field_image']['alter']['path'] = 'content/tutorials-and-appointments';
+  $handler->display->display_options['fields']['field_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['path'] = '[field_link]';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Content: Destination page */
-  $handler->display->display_options['fields']['field_destination_page']['id'] = 'field_destination_page';
-  $handler->display->display_options['fields']['field_destination_page']['table'] = 'field_data_field_destination_page';
-  $handler->display->display_options['fields']['field_destination_page']['field'] = 'field_destination_page';
-  $handler->display->display_options['fields']['field_destination_page']['label'] = '';
-  $handler->display->display_options['fields']['field_destination_page']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_destination_page']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_destination_page']['delta_limit'] = 'all';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_link]';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';

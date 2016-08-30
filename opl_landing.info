@@ -16,6 +16,7 @@ features[page_manager_pages][] = opl_about
 features[page_manager_pages][] = opl_browse_landing_page
 features[page_manager_pages][] = opl_contact
 features[page_manager_pages][] = opl_human_library_landing_page
+features[page_manager_pages][] = opl_make_a_booking
 features[page_manager_pages][] = opl_services_landing_page
 features[page_manager_pages][] = opl_support_landing_page
 features[views_view][] = about_landing_page
