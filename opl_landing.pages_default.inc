@@ -835,7 +835,7 @@ function opl_landing_default_page_manager_pages() {
     'args' => '',
     'url' => '',
     'display' => 'embed_8',
-    'override_title' => 0,
+    'override_title' => 1,
     'override_title_text' => '',
     'override_title_heading' => 'h2',
   );
