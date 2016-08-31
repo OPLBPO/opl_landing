@@ -19,3 +19,21 @@ function opl_landing_ctools_plugin_api($module = NULL, $api = NULL) {
 function opl_landing_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
+
+/**
+ * Implements hook_node_info().
+ */
+function opl_landing_node_info() {
+  $items = array(
+    'landing_page' => array(
+      'name' => t('Landing page'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  drupal_alter('node_info', $items);
+  return $items;
+}
