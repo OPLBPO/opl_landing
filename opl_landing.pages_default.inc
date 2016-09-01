@@ -187,7 +187,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -282,7 +282,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -377,7 +377,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -430,7 +430,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -472,7 +472,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -567,7 +567,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -620,7 +620,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -662,7 +662,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -792,7 +792,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -845,7 +845,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing booking-cards',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -887,7 +887,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -982,7 +982,7 @@ function opl_landing_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
