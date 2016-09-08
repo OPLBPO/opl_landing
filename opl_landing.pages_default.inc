@@ -240,7 +240,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -335,7 +335,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -525,7 +525,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -533,7 +533,7 @@ function opl_landing_default_page_manager_pages() {
   $pane->uuid = '9c4fb6a9-9daa-46de-ac21-8884f9b08d7c';
   $display->content['new-9c4fb6a9-9daa-46de-ac21-8884f9b08d7c'] = $pane;
   $display->panels['middle'][0] = 'new-9c4fb6a9-9daa-46de-ac21-8884f9b08d7c';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-9c4fb6a9-9daa-46de-ac21-8884f9b08d7c';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
@@ -715,7 +715,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -940,7 +940,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing',
   );
   $pane->extras = array();
   $pane->position = 0;
@@ -1035,7 +1035,7 @@ function opl_landing_default_page_manager_pages() {
   );
   $pane->css = array(
     'css_id' => '',
-    'css_class' => 'program-event-cards',
+    'css_class' => 'landing',
   );
   $pane->extras = array();
   $pane->position = 0;

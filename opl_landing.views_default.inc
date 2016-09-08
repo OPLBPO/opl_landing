@@ -855,7 +855,7 @@ And because our customers are as diverse as our collections, we have a variety o
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'item item-icon';
+  $handler->display->display_options['style_options']['row_class'] = 'item';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Field: Content: Link */
