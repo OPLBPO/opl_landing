@@ -36,6 +36,12 @@ function opl_landing_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -105,6 +111,12 @@ function opl_landing_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 4,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -170,6 +182,12 @@ function opl_landing_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 2,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
@@ -300,6 +318,12 @@ function opl_landing_field_default_field_instances() {
         'type' => 'link_default',
         'weight' => 1,
       ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'resource_title_help' => array(
         'label' => 'above',
         'settings' => array(),
@@ -379,6 +403,12 @@ function opl_landing_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 5,
+      ),
+      'featured_event' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'resource_title_help' => array(
         'label' => 'above',
