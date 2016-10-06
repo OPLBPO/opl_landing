@@ -73,7 +73,7 @@ function opl_landing_views_default_views() {
   $handler->display->display_options['fields']['title_field']['label'] = '';
   $handler->display->display_options['fields']['title_field']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title_field']['alter']['path'] = '[field_link]';
-  $handler->display->display_options['fields']['title_field']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title_field']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title_field']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
@@ -864,7 +864,7 @@ And because our customers are as diverse as our collections, we have a variety o
   $handler->display->display_options['fields']['title_field']['label'] = '';
   $handler->display->display_options['fields']['title_field']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title_field']['alter']['path'] = '[field_link]';
-  $handler->display->display_options['fields']['title_field']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title_field']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title_field']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
@@ -945,7 +945,7 @@ And because our customers are as diverse as our collections, we have a variety o
   $handler->display->display_options['fields']['title_field']['label'] = '';
   $handler->display->display_options['fields']['title_field']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title_field']['alter']['path'] = '[field_link]';
-  $handler->display->display_options['fields']['title_field']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title_field']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title_field']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
@@ -1148,7 +1148,7 @@ And because our customers are as diverse as our collections, we have a variety o
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
   $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
