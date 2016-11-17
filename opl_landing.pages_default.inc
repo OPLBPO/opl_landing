@@ -45,7 +45,7 @@ function opl_landing_default_page_manager_handlers() {
   $display->title = '';
   $display->uuid = '929219d1-1faf-4db6-8404-3c1df960180f';
   $display->storage_type = 'page_manager';
-  $display->storage_id = 'entity_panels_node_landing_page_default__panel_context_a7cb6202-db62-4651-acae-f6dd6460a921';
+  $display->storage_id = 'entity_panels_node_landing_page_default__panel_context_cdd59b68-22fe-46cd-8e86-ca7fc15e816c';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -162,6 +162,133 @@ function opl_landing_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
+  $page->name = 'library_month_panel_page';
+  $page->task = 'page';
+  $page->admin_title = 'Library month panel page';
+  $page->admin_description = '';
+  $page->path = 'library-month-test';
+  $page->access = array();
+  $page->menu = array();
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_library_month_panel_page__panel';
+  $handler->task = 'page';
+  $handler->subtask = 'library_month_panel_page';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Panel',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => 'panel',
+    'access' => array(
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = 'Library month';
+  $display->uuid = '06bbe675-b2b5-48cf-8cec-d20d54b06c30';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_library_month_panel_page__panel';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-09d15a38-49e6-44da-8ff7-798c7b32cd55';
+  $pane->panel = 'middle';
+  $pane->type = 'node';
+  $pane->subtype = 'node';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'nid' => '33318',
+    'links' => 1,
+    'leave_node_title' => 0,
+    'identifier' => '',
+    'build_mode' => 'teaser',
+    'link_node_title' => 0,
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '09d15a38-49e6-44da-8ff7-798c7b32cd55';
+  $display->content['new-09d15a38-49e6-44da-8ff7-798c7b32cd55'] = $pane;
+  $display->panels['middle'][0] = 'new-09d15a38-49e6-44da-8ff7-798c7b32cd55';
+  $pane = new stdClass();
+  $pane->pid = 'new-d5ab4147-6c95-476e-bcda-bffddcdfccd5';
+  $pane->panel = 'middle';
+  $pane->type = 'views';
+  $pane->subtype = 'about_landing_page';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_pager_settings' => 0,
+    'use_pager' => 0,
+    'nodes_per_page' => '10',
+    'pager_id' => '0',
+    'offset' => '0',
+    'more_link' => 0,
+    'feed_icons' => 0,
+    'panel_args' => 0,
+    'link_to_view' => 0,
+    'args' => '',
+    'url' => '',
+    'display' => 'block_1',
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'landing',
+  );
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = 'd5ab4147-6c95-476e-bcda-bffddcdfccd5';
+  $display->content['new-d5ab4147-6c95-476e-bcda-bffddcdfccd5'] = $pane;
+  $display->panels['middle'][1] = 'new-d5ab4147-6c95-476e-bcda-bffddcdfccd5';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-09d15a38-49e6-44da-8ff7-798c7b32cd55';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['library_month_panel_page'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
   $page->name = 'opl_2013_annual_report_landing_page';
   $page->task = 'page';
   $page->admin_title = 'opl_2013_annual_report_landing_page';
@@ -207,7 +334,7 @@ function opl_landing_default_page_manager_pages() {
   $display->title = '';
   $display->uuid = 'af178b6c-dc69-41d7-b047-549aafb84b92';
   $display->storage_type = 'page_manager';
-  $display->storage_id = '';
+  $display->storage_id = 'page_opl_2013_annual_report_landing_page__panel_context_829c89f0-5aef-40f9-9df5-b1cd65aced80';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -302,7 +429,7 @@ function opl_landing_default_page_manager_pages() {
   $display->title = '';
   $display->uuid = '5a7dfc10-33be-4841-965c-a6d3717ec4d4';
   $display->storage_type = 'page_manager';
-  $display->storage_id = '';
+  $display->storage_id = 'page_opl_2014_annual_report_landing_page__panel_context_0d92d844-4da1-4718-b6d2-e3b0ddb5dc8a';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -397,7 +524,7 @@ function opl_landing_default_page_manager_pages() {
   $display->title = 'About the library';
   $display->uuid = '13db7bd0-7f21-427c-acea-0b21075a3284';
   $display->storage_type = 'page_manager';
-  $display->storage_id = '';
+  $display->storage_id = 'page_opl_about__panel_context_0c69aa89-f221-4639-955a-f5b3c6f45ecd';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -492,7 +619,7 @@ function opl_landing_default_page_manager_pages() {
   $display->title = '';
   $display->uuid = 'dadeb860-bbab-4f9a-b0a6-5e6eacaf97da';
   $display->storage_type = 'page_manager';
-  $display->storage_id = '';
+  $display->storage_id = 'page_opl_browse_landing_page__panel_context_48d3c5a9-fb47-4d72-8632-fd694e14cb92';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -682,7 +809,7 @@ function opl_landing_default_page_manager_pages() {
   $display->title = '';
   $display->uuid = '38d4008e-7989-48d1-a51c-fecfe6394ce6';
   $display->storage_type = 'page_manager';
-  $display->storage_id = '';
+  $display->storage_id = 'page_opl_human_library_landing_page__panel_context_b22fe0b5-96ab-4b94-9183-9a3a4495fcb8';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -812,7 +939,7 @@ function opl_landing_default_page_manager_pages() {
   $display->title = '';
   $display->uuid = '3ace5b4b-c954-40ed-a414-1baab8b32aa6';
   $display->storage_type = 'page_manager';
-  $display->storage_id = '';
+  $display->storage_id = 'page_opl_make_a_booking__panel_context_2ecb6869-55f7-436a-acb1-cade14745795';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -907,7 +1034,7 @@ function opl_landing_default_page_manager_pages() {
   $display->title = 'Services at the library';
   $display->uuid = '2a5d2d6b-e39c-4167-8dce-25b8084a8a68';
   $display->storage_type = 'page_manager';
-  $display->storage_id = 'page_opl_contact__panel';
+  $display->storage_id = 'page_opl_services_landing_page__panel_context_5a2de431-3ba3-47a4-8a1b-1ecbd09b82cc';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -1002,7 +1129,7 @@ function opl_landing_default_page_manager_pages() {
   $display->title = '';
   $display->uuid = 'f63554ff-f950-45a8-9e28-c360b1103e8b';
   $display->storage_type = 'page_manager';
-  $display->storage_id = '';
+  $display->storage_id = 'page_opl_support_landing_page__panel_context_5c240505-7083-40a1-893c-e22ecb5cfe41';
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
@@ -1048,6 +1175,196 @@ function opl_landing_default_page_manager_pages() {
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['opl_support_landing_page'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = TRUE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
+  $page->name = 'opl_teens_landing_page';
+  $page->task = 'page';
+  $page->admin_title = 'opl_teens_landing_page';
+  $page->admin_description = '';
+  $page->path = 'teens';
+  $page->access = array();
+  $page->menu = array();
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_opl_teens_landing_page__panel_context_8609fccc-f06d-408c-80a7-febf59656f95';
+  $handler->task = 'page';
+  $handler->subtask = 'opl_teens_landing_page';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'About the library',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => '',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = 'Teens_landing';
+  $display->uuid = '13db7bd0-7f21-427c-acea-0b21075a3284';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_opl_teens_landing_page__panel_context_8609fccc-f06d-408c-80a7-febf59656f95';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-825aeded-7c69-4d48-a42b-cab3ab9a1488';
+  $pane->panel = 'middle';
+  $pane->type = 'views';
+  $pane->subtype = 'about_landing_page';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_pager_settings' => 0,
+    'use_pager' => 0,
+    'nodes_per_page' => '10',
+    'pager_id' => '0',
+    'offset' => '0',
+    'more_link' => 0,
+    'feed_icons' => 0,
+    'panel_args' => 0,
+    'link_to_view' => 0,
+    'args' => '',
+    'url' => '',
+    'display' => 'page_7',
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'masonry',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '825aeded-7c69-4d48-a42b-cab3ab9a1488';
+  $display->content['new-825aeded-7c69-4d48-a42b-cab3ab9a1488'] = $pane;
+  $display->panels['middle'][0] = 'new-825aeded-7c69-4d48-a42b-cab3ab9a1488';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['opl_teens_landing_page'] = $page;
+
+  $page = new stdClass();
+  $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
+  $page->api_version = 1;
+  $page->name = 'teen_landing_page';
+  $page->task = 'page';
+  $page->admin_title = 'Teen landing page';
+  $page->admin_description = '';
+  $page->path = 'newteens';
+  $page->access = array();
+  $page->menu = array();
+  $page->arguments = array();
+  $page->conf = array(
+    'admin_paths' => FALSE,
+  );
+  $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_teen_landing_page__panel';
+  $handler->task = 'page';
+  $handler->subtask = 'teen_landing_page';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'Panel',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'no-main-content-container-bg',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => 'panel',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'c2f2f614-8fc4-42c0-955f-15ab7e2625a5';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_teen_landing_page__panel';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-93a88ae1-a407-4dd5-8329-4653cf4dcc1e';
+  $pane->panel = 'middle';
+  $pane->type = 'views';
+  $pane->subtype = 'about_landing_page';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'override_pager_settings' => 0,
+    'use_pager' => 0,
+    'nodes_per_page' => '10',
+    'pager_id' => '0',
+    'offset' => '0',
+    'more_link' => 0,
+    'feed_icons' => 0,
+    'panel_args' => 0,
+    'link_to_view' => 0,
+    'args' => '',
+    'url' => '',
+    'display' => 'embed_9',
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'landing',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '93a88ae1-a407-4dd5-8329-4653cf4dcc1e';
+  $display->content['new-93a88ae1-a407-4dd5-8329-4653cf4dcc1e'] = $pane;
+  $display->panels['middle'][0] = 'new-93a88ae1-a407-4dd5-8329-4653cf4dcc1e';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = 'new-93a88ae1-a407-4dd5-8329-4653cf4dcc1e';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $pages['teen_landing_page'] = $page;
 
   return $pages;
 

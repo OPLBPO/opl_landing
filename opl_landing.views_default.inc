@@ -852,7 +852,7 @@ And because our customers are as diverse as our collections, we have a variety o
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'blog_event_card_image',
     'image_link' => '',
   );
   /* Field: title field */
