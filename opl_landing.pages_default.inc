@@ -357,7 +357,7 @@ function opl_landing_default_page_manager_pages() {
     'args' => '',
     'url' => '',
     'display' => 'embed_4',
-    'override_title' => 0,
+    'override_title' => 1,
     'override_title_text' => '',
     'override_title_heading' => 'h2',
   );
@@ -375,7 +375,7 @@ function opl_landing_default_page_manager_pages() {
   $pane->uuid = '9e7f0e84-a131-4c0b-93da-2092daae2a96';
   $display->content['new-9e7f0e84-a131-4c0b-93da-2092daae2a96'] = $pane;
   $display->panels['middle'][0] = 'new-9e7f0e84-a131-4c0b-93da-2092daae2a96';
-  $display->hide_title = PANELS_TITLE_NONE;
+  $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-9e7f0e84-a131-4c0b-93da-2092daae2a96';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
@@ -452,7 +452,7 @@ function opl_landing_default_page_manager_pages() {
     'args' => '',
     'url' => '',
     'display' => 'embed_6',
-    'override_title' => 0,
+    'override_title' => 1,
     'override_title_text' => '',
     'override_title_heading' => 'h2',
   );
@@ -470,7 +470,7 @@ function opl_landing_default_page_manager_pages() {
   $pane->uuid = '6ebb901a-d750-463b-9714-b937e56df58b';
   $display->content['new-6ebb901a-d750-463b-9714-b937e56df58b'] = $pane;
   $display->panels['middle'][0] = 'new-6ebb901a-d750-463b-9714-b937e56df58b';
-  $display->hide_title = PANELS_TITLE_NONE;
+  $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-6ebb901a-d750-463b-9714-b937e56df58b';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
@@ -521,7 +521,7 @@ function opl_landing_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'About the library';
+  $display->title = '';
   $display->uuid = '13db7bd0-7f21-427c-acea-0b21075a3284';
   $display->storage_type = 'page_manager';
   $display->storage_id = 'page_opl_about__panel_context_0c69aa89-f221-4639-955a-f5b3c6f45ecd';
@@ -565,7 +565,7 @@ function opl_landing_default_page_manager_pages() {
   $pane->uuid = '83513dee-d822-4052-a362-c509f556bc75';
   $display->content['new-83513dee-d822-4052-a362-c509f556bc75'] = $pane;
   $display->panels['middle'][0] = 'new-83513dee-d822-4052-a362-c509f556bc75';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-83513dee-d822-4052-a362-c509f556bc75';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
@@ -642,7 +642,7 @@ function opl_landing_default_page_manager_pages() {
     'args' => '',
     'url' => '',
     'display' => 'embed_5',
-    'override_title' => 0,
+    'override_title' => 1,
     'override_title_text' => '',
     'override_title_heading' => 'h2',
   );
@@ -660,7 +660,7 @@ function opl_landing_default_page_manager_pages() {
   $pane->uuid = '9c4fb6a9-9daa-46de-ac21-8884f9b08d7c';
   $display->content['new-9c4fb6a9-9daa-46de-ac21-8884f9b08d7c'] = $pane;
   $display->panels['middle'][0] = 'new-9c4fb6a9-9daa-46de-ac21-8884f9b08d7c';
-  $display->hide_title = PANELS_TITLE_NONE;
+  $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-9c4fb6a9-9daa-46de-ac21-8884f9b08d7c';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
@@ -711,7 +711,7 @@ function opl_landing_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Contact us';
+  $display->title = '';
   $display->uuid = '2a5d2d6b-e39c-4167-8dce-25b8084a8a68';
   $display->storage_type = 'page_manager';
   $display->storage_id = 'page_opl_contact__panel';
@@ -1031,7 +1031,7 @@ function opl_landing_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Services at the library';
+  $display->title = '';
   $display->uuid = '2a5d2d6b-e39c-4167-8dce-25b8084a8a68';
   $display->storage_type = 'page_manager';
   $display->storage_id = 'page_opl_services_landing_page__panel_context_5a2de431-3ba3-47a4-8a1b-1ecbd09b82cc';
@@ -1152,7 +1152,7 @@ function opl_landing_default_page_manager_pages() {
     'args' => '',
     'url' => '',
     'display' => 'embed_3',
-    'override_title' => 0,
+    'override_title' => 1,
     'override_title_text' => '',
     'override_title_heading' => 'h2',
   );
@@ -1170,7 +1170,7 @@ function opl_landing_default_page_manager_pages() {
   $pane->uuid = '14384f92-5262-402e-b290-66051196204b';
   $display->content['new-14384f92-5262-402e-b290-66051196204b'] = $pane;
   $display->panels['middle'][0] = 'new-14384f92-5262-402e-b290-66051196204b';
-  $display->hide_title = PANELS_TITLE_NONE;
+  $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-14384f92-5262-402e-b290-66051196204b';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

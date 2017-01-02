@@ -832,6 +832,8 @@ And because our customers are as diverse as our collections, we have a variety o
 
   /* Display: Imagine */
   $handler = $view->new_display('page', 'Imagine', 'page_8');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Imagine Space';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
@@ -1075,6 +1077,7 @@ And because our customers are as diverse as our collections, we have a variety o
     t('Booking landing page - Embed'),
     t('teens'),
     t('Imagine'),
+    t('Imagine Space'),
     t('Block'),
     t('Teens - embed'),
   );
@@ -1258,6 +1261,48 @@ And because our customers are as diverse as our collections, we have a variety o
 
   /* Display: Services - embed */
   $handler = $view->new_display('embed', 'Services - embed', 'embed_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
+  $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['label'] = '';
+  $handler->display->display_options['fields']['field_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_link']['click_sort_column'] = 'url';
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['alter']['path'] = '[field_link]';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Entity translation: Title: translated */
+  $handler->display->display_options['fields']['title_field_et']['id'] = 'title_field_et';
+  $handler->display->display_options['fields']['title_field_et']['table'] = 'field_data_title_field';
+  $handler->display->display_options['fields']['title_field_et']['field'] = 'title_field_et';
+  $handler->display->display_options['fields']['title_field_et']['label'] = '';
+  $handler->display->display_options['fields']['title_field_et']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title_field_et']['alter']['path'] = '[field_link]';
+  $handler->display->display_options['fields']['title_field_et']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title_field_et']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $translatables['services_1on1'] = array(
     t('Master'),
     t('Services'),
